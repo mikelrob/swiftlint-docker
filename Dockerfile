@@ -1,6 +1,6 @@
 FROM cimg/base:2020.05
 
-LABEL maintainer="Community & Partner Engineering Team <community-partner@circleci.com>"
+LABEL maintainer="BytesGuy <bytesguy@users.noreply.github.com>"
 
 ENV SWIFTLINT_VERSION 0.39.2
 ENV SWIFT_VERSION 5.2.3
