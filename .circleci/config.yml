@@ -25,5 +25,5 @@ jobs:
 
 workflows:
   build-swiftlint:
-    - jobs:
-        - build-deploy-image
+    jobs:
+      - build-deploy-image
