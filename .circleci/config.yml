@@ -17,8 +17,8 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: "Build Swiftlint << parameters.swiftlint-version >> image with Swift << parameters.swift-version >>"
-          command: docker build --file << parameters.swiftlint-version >>/Dockerfile -t bytesguy/swiftlint:latest -t bytesguy/swiftlint:<< parameters.swiftlint-version >> .
+          name: "Build Swiftlint << pipeline.parameters.swiftlint-version >> image with Swift << pipeline.parameters.swift-version >>"
+          command: docker build --file << pipeline.parameters.swiftlint-version >>/Dockerfile -t bytesguy/swiftlint:latest -t bytesguy/swiftlint:<< pipeline.parameters.swiftlint-version >> .
       - run:
           name: "Publish Image to DockerHub"
           command: echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin && docker push bytesguy/swiftlint
