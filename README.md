@@ -39,3 +39,5 @@ More information about a multi executor setup can be found in the [CircleCI iOS 
 Each time SwiftLint is updated, there will be a new, version tagged, release of the SwiftLint docker image. The latest version of Swift, at the time of building, will always be used.
 
 The images are built on the official CircleCI base image to ensure compatbility with CircleCI jobs.
+
+The Dockerfile for each version can be found in the `versions` directory.
