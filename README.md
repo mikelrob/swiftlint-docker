@@ -1,6 +1,6 @@
 <h1>SwiftLint Docker Image</h1>
 
-[![CircleCI Build Status](https://circleci.com/gh/BytesGuy/swiftlint-docker.svg?style=shield)](https://circleci.com/gh/BytesGuy/swiftlint-docker) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BytesGuy/swiftlint-dockermaster/LICENSE) [![Docker Pulls](https://img.shields.io/docker/pulls/bytesguy/swiftlint-docker)](https://hub.docker.com/r/bytesguy/swiftlint)
+[![CircleCI Build Status](https://circleci.com/gh/BytesGuy/swiftlint-docker.svg?style=shield)](https://circleci.com/gh/BytesGuy/swiftlint-docker) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BytesGuy/swiftlint-dockermaster/LICENSE) [![Docker Pulls](https://img.shields.io/docker/pulls/bytesguy/swiftlint)](https://hub.docker.com/r/bytesguy/swiftlint)
 
 `bytesguy/swiftlint` is a docker image designed to make using SwiftLint easy, particulary in CircleCI jobs. SwiftLint is a tool to enforce style and conventions in Swift code. More information about SwiftLint can be found at the [SwiftLint repo](https://github.com/realm/SwiftLint).
 
