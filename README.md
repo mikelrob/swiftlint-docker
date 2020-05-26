@@ -4,6 +4,8 @@
 
 `bytesguy/swiftlint` is a docker image designed to make using SwiftLint easy, particulary in CircleCI jobs. SwiftLint is a tool to enforce style and conventions in Swift code. More information about SwiftLint can be found at the [SwiftLint repo](https://github.com/realm/SwiftLint).
 
+You can find the image on [DockerHub](https://hub.docker.com/r/bytesguy/swiftlint)
+
 ## Getting Started
 
 An example of how to use this image with CircleCI can be found below:
