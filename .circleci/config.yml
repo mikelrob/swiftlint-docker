@@ -1,0 +1,24 @@
+version: 2.1
+
+parameters:
+  swiftlint-version: 
+    type: string
+    default: 0.39.2
+  swift-version:
+    type: string
+    default: 5.2.3
+
+
+jobs:
+  build-deploy-image:
+    docker: 
+      - image: cibuilds/docker:latest
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: "Build Swiftlint << parameters.swiftlint-version >> image with Swift << parameters.swift-version >>"
+          command: docker build --file << parameters.swiftlint-version >>/Dockerfile -t bytesguy/swiftlint:latest -t bytesguy/swiftlint:<< parameters.swiftlint-version >> .
+      - run:
+          name: "Publish Image to DockerHub"
+          command: echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin && docker push bytesguy/swiftlint
