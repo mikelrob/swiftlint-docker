@@ -2,8 +2,8 @@ FROM cimg/base:2020.05
 
 LABEL maintainer="BytesGuy <bytesguy@users.noreply.github.com>"
 
-ENV SWIFTLINT_VERSION 0.39.2
-ENV SWIFT_VERSION 5.2.3
+ENV SWIFTLINT_VERSION 0.46.5
+ENV SWIFT_VERSION 5.6.1
 
 USER root
 
